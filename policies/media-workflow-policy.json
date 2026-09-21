@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "name": "media-workflow-policy",
+  "maxBatchSize": 500,
+  "canaryPercent": 2,
+  "maxErrorRatePercent": 2,
+  "requiredApprovals": 1,
+  "requiredRoles": ["responder"],
+  "requiredVerifier": "object-write",
+  "unknownExternalEffect": "MANUAL_REVIEW"
+}

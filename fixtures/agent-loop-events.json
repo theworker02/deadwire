@@ -1,0 +1,5 @@
+[
+  {"runId": "agent-7a21", "agent": "researcher", "state": "search", "semanticProgress": 0.03},
+  {"runId": "agent-7a21", "agent": "researcher", "state": "evaluate", "semanticProgress": 0.03},
+  {"runId": "agent-7a21", "agent": "researcher", "state": "search", "semanticProgress": 0.03}
+]

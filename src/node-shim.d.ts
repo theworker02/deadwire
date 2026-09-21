@@ -1,0 +1,7 @@
+declare module "node:crypto" { export function createHash(algorithm: string): { update(value: string): { digest(encoding: string): string } }; export function createHmac(algorithm: string, key: string): { update(value: string): { digest(encoding: string): string } }; export function timingSafeEqual(a: Uint8Array, b: Uint8Array): boolean; }
+declare module "node:http" { export function createServer(handler: (request: any, response: any) => void): { listen(port: number, host: string, callback: () => void): void }; }
+declare module "node:fs" { export function readFileSync(path: string, encoding: string): string; export function writeFileSync(path: string, data: string): void; export function existsSync(path: string): boolean; export function mkdirSync(path: string, options?: { recursive?: boolean }): void; }
+declare module "node:test" { export default function test(name: string, fn: () => void | Promise<void>): void; }
+declare module "node:assert/strict" { const assert: { equal(actual: unknown, expected: unknown): void; deepEqual(actual: unknown, expected: unknown): void; ok(value: unknown): void }; export default assert; }
+declare const process: { argv: string[]; env: Record<string, string | undefined>; exitCode?: number };
+declare const fetch: (input: string, init?: { headers?: Record<string, string> }) => Promise<{ ok: boolean; status: number; text(): Promise<string>; json(): Promise<unknown> }>;

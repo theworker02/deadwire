@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Deadwire: recovery intelligence for durable workflows.">
+  <title>Deadwire — Recovery intelligence for durable workflows</title>
+  <link rel="icon" href="https://upstash.com/favicon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="nav"><a class="brand" href="#top"><span class="bolt">↯</span> DEADWIRE <small>v1.9</small></a><nav><a href="#product">Product</a><a href="#workflow">Recovery</a><a href="#platform">Platform</a><a href="#demo">Demo</a><a class="nav-cta" href="https://github.com">Request access</a></nav></header>
+  <main id="top">
+    <section class="hero"><div class="eyebrow">RECOVERY INTELLIGENCE FOR UPSTASH WORKFLOW + QSTASH</div><h1>Don’t just retry.<br><em>Know what recovery will do.</em></h1><p class="lead">Deadwire groups failed durable executions into root-cause incidents, proves what can safely replay, and controls recovery through evidence, approvals, and canaries.</p><div class="actions"><a class="button primary" href="./presentation.html">Watch 60-second story</a><a class="button secondary" href="#demo">Explore live incident</a></div><p class="micro">Built to complement <a href="https://upstash.com">Upstash</a>. Not affiliated with or endorsed by Upstash.</p></section>
+    <section class="signal-band"><div><strong>8,147</strong><span>affected executions</span></div><div><strong>1</strong><span>probable incident</span></div><div><strong>97.4%</strong><span>signature confidence</span></div><div><strong>0</strong><span>unsafe resumes issued</span></div></section>
+    <section id="product" class="section split"><div><p class="eyebrow">FROM DLQ ENTRIES TO OPERATIONS</p><h2>A DLQ is evidence.<br>Deadwire makes it a decision.</h2><p>Native retries preserve durability. Deadwire adds failure forensics, side-effect evidence, code compatibility, and a recovery control plane around the moment durability alone is no longer enough.</p></div><div class="terminal"><div class="terminal-top"><span></span><span></span><span></span><b>INCIDENT DW-193</b></div><pre><i>COMMON FAILURE BOUNDARY</i>
+checkout.finalize → payments-api/v3
+
+<i>PROBABLE CAUSE</i>
+payment provider response schema changed
+
+<i>DEPLOYMENT</i>
+checkout-api@4f18c9
+
+<i>RECOVERY STATUS</i>
+<b class="amber">BLOCKED PENDING COMPATIBILITY FIX</b></pre></div></section>
+    <section class="section dark-grid"><p class="eyebrow">THE CONTROL SURFACE</p><h2>Everything required to recover<br>with confidence.</h2><div class="grid"><article><b>01 / Evidence graph</b><p>Source hashes, deployment provenance, step manifests, dependency traces, and sanitized shape fingerprints.</p></article><article><b>02 / Side-effect proof</b><p>Payment, email, webhook, outbox, object, and HTTP-contract verifiers turn “probably safe” into evidence.</p></article><article><b>03 / Compatibility gate</b><p>Blocks resumes when a new deployment altered code that created persisted workflow state.</p></article><article><b>04 / Recovery protocol</b><p>Two-person approval, mandatory flow control, 1% canary, recurrence halt, batch reconciliation, immutable receipt.</p></article><article><b>05 / Agent forensics</b><p>Loop detection, duplicate tool calls, model-cost attribution, and safe checkpoint analysis for durable agents.</p></article><article><b>06 / Open platform</b><p>Upstash-first today. Adapter contracts for Temporal, Inngest, Trigger.dev, Step Functions, and Cloudflare Workflows.</p></article></div></section>
+    <section id="workflow" class="section"><p class="eyebrow">RECOVERY IS A PROTOCOL, NOT A BUTTON</p><h2>Evidence-backed recovery waves.</h2><div class="flow"><div>Propose<small>Safe plan only</small></div><i>→</i><div>Simulate<small>Verifier evidence</small></div><i>→</i><div>Approve<small>Role separation</small></div><i>→</i><div>Canary<small>1% with flow control</small></div><i>→</i><div>Observe<small>Halt on recurrence</small></div><i>→</i><div>Ramp<small>Controlled batch</small></div><i>→</i><div>Reconcile<small>Recovery receipt</small></div></div></section>
+    <section id="platform" class="section split reverse"><div class="metric-stack"><div><small>INTEGRATION MODEL</small><b>SDK + callback + telemetry</b></div><div><small>SECURITY POSTURE</small><b>Signed evidence. No raw secrets.</b></div><div><small>OPERATIONS MODEL</small><b>Tenant-aware, auditable, approval-gated.</b></div></div><div><p class="eyebrow">DESIGNED FOR ACQUISITION-QUALITY FIT</p><h2>Native to the Upstash workflow model.</h2><p>Deadwire uses workflow-step evidence, QStash control primitives, rate-limited recovery, and the durable agent boundary. It improves recovery correctness without attempting to replace Upstash’s execution engine.</p></div></section>
+    <section id="demo" class="section demo"><p class="eyebrow">INTERACTIVE DEMO</p><h2>Should this incident resume?</h2><p id="demo-copy">DW-193 contains one run whose payment side effect is unknown. The recovery batch is blocked.</p><div class="demo-layout"><div class="scenario-list"><button class="scenario active" data-scenario="payment">Payment schema drift <span>BLOCK</span></button><button class="scenario" data-scenario="thumbnail">Thumbnail timeout <span>SAFE RESUME</span></button><button class="scenario" data-scenario="compat">Changed prior step <span>MANUAL REVIEW</span></button></div><div class="decision-card"><small>DEADWIRE RECOMMENDATION</small><strong id="decision">BLOCK</strong><p id="reason">External side effect may have occurred without an observed idempotency key. Verify the provider transaction before recovery.</p><div class="evidence"><span id="e1">side effect: unknown</span><span id="e2">code compatibility: pass</span><span id="e3">recovery batch: denied</span></div><button id="simulate" class="button primary">Run deterministic simulation</button><p class="sim-result" id="sim-result" aria-live="polite"></p></div></div></section>
+  </main>
+  <footer><span class="bolt">↯</span> DEADWIRE <span>Failure intelligence and recovery control for durable workflows.</span><a href="../LICENSE">Proprietary license</a></footer>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "name": "financial-workflow-policy",
+  "maxBatchSize": 20,
+  "canaryPercent": 1,
+  "maxErrorRatePercent": 0,
+  "requiredApprovals": 2,
+  "requiredRoles": ["responder", "approver"],
+  "requiredVerifier": "payment",
+  "unknownExternalEffect": "BLOCK"
+}

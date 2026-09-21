@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deadwire Workflow Evidence",
+  "type": "object",
+  "required": ["tenantId", "runId", "provenance", "steps", "emittedAt"],
+  "properties": {
+    "tenantId": {"type": "string", "minLength": 1},
+    "runId": {"type": "string", "minLength": 1},
+    "provenance": {"type": "object", "required": ["workflow", "workflowVersion", "deploymentSha", "environment"]},
+    "steps": {"type": "array", "items": {"type": "object", "required": ["step", "stepHash", "ordinal", "completed", "sideEffect"]}},
+    "emittedAt": {"type": "string", "format": "date-time"}
+  }
+}

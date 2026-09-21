@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deadwire Deployment Signal",
+  "type": "object",
+  "required": ["tenantId", "provider", "sha", "deployedAt", "environment", "changedFiles", "changedPackages"],
+  "properties": {
+    "provider": {"enum": ["github", "vercel", "ci"]},
+    "sha": {"type": "string"},
+    "changedFiles": {"type": "array", "items": {"type": "string"}},
+    "changedPackages": {"type": "array", "items": {"type": "string"}}
+  }
+}

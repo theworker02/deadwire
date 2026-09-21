@@ -1,0 +1,7 @@
+{
+  "incident": "DW-193",
+  "description": "Sanitized payment provider response contract drift fixture",
+  "boundary": "checkout.finalize → payments-api/v3",
+  "affectedExecutions": 10,
+  "containsSensitiveData": false
+}

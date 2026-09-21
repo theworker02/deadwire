@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "name": "default-recovery-policy",
+  "maxBatchSize": 100,
+  "canaryPercent": 1,
+  "maxErrorRatePercent": 1,
+  "requiredApprovals": 2,
+  "requiredRoles": ["responder", "approver"],
+  "allowedActions": ["SAFE_RESUME", "SAFE_RESTART"],
+  "unknownExternalEffect": "BLOCK"
+}

@@ -1,0 +1,7 @@
+{
+  "workflow": "checkout",
+  "completedStep": "validate-cart",
+  "oldHash": "validate-v17",
+  "candidateHash": "validate-v18",
+  "expectedAction": "MANUAL_REVIEW"
+}

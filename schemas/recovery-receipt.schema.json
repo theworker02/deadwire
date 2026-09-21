@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deadwire Recovery Receipt",
+  "type": "object",
+  "required": ["id", "incidentId", "createdAt", "proposedBy", "status", "planHash", "actions", "evidence"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^RC-"},
+    "incidentId": {"type": "string", "pattern": "^DW-"},
+    "status": {"enum": ["PROPOSED", "APPROVED", "REJECTED"]},
+    "planHash": {"type": "string"},
+    "evidence": {"type": "array", "items": {"type": "string"}}
+  }
+}

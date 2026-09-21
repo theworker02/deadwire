@@ -1,0 +1,7 @@
+{
+  "workflow": "thumbnail-pipeline",
+  "sideEffect": "object-write",
+  "destinationIdempotent": true,
+  "outputPresent": false,
+  "expectedAction": "SAFE_RESUME"
+}
