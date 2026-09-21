@@ -543,6 +543,7 @@ Deadwire/
 - [GitHub Pages guide](docs/GITHUB_PAGES.md)
 - [Static demo → product conversion](docs/FRONTEND_BACKEND_CONVERSION.md)
 - [Acquisition handoff](docs/ACQUISITION_HANDOFF.md)
+- [Acquisition and restricted-use notice](ACQUISITION.md)
 - [Workspace map](WORKSPACE.md)
 - [Proprietary license](LICENSE)
 - [1.9.1 source release archive](artifacts/Deadwire-1.9.1.zip)
