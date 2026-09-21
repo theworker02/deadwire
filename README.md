@@ -52,6 +52,7 @@ The Upstash mark above is served from Upstash’s official domain and is used on
 - [Static demo to product conversion](#static-demo-to-product-conversion)
 - [Repository map](#repository-map)
 - [Release materials](#release-materials)
+- [Verification and benchmarks](#verification-and-benchmarks)
 - [Status and limitations](#status-and-limitations)
 
 ## Why Deadwire
@@ -472,6 +473,21 @@ The included [GitHub Actions workflow](.github/workflows/deploy-pages.yml) publi
 
 Full setup instructions are in [docs/GITHUB_PAGES.md](docs/GITHUB_PAGES.md).
 
+## Verification and benchmarks
+
+Deadwire includes deterministic type, behavior, demo, static-asset, and core-performance checks. The frozen `1.9.1` release run passed **21 automated tests** and processed a synthetic, sanitized **10,000-run** incident corpus at approximately **215,875 clustering runs/second** on the local Windows/Node workspace. The core analysis path—planning, simulation classification, cause hypothesis, blast-radius derivation, and policy decision—completed in **3.87 ms** for that corpus.
+
+These are transparent implementation-level results, not a claim about hosted throughput, QStash API latency, database performance, encrypted vault latency, or external verifier capacity. Reproduce them with:
+
+```powershell
+npm run typecheck
+npm test
+npm run demo
+npm run benchmark
+```
+
+Read [VERIFICATION.md](VERIFICATION.md) for coverage and [BENCHMARKS.md](BENCHMARKS.md) for method, result, and scope.
+
 ## Static demo to product conversion
 
 The static GitHub Pages site is designed to serve immediately as an acquisition or partner presentation and to convert cleanly into a full product surface afterward.
@@ -530,6 +546,9 @@ Deadwire/
 - [Workspace map](WORKSPACE.md)
 - [Proprietary license](LICENSE)
 - [1.9.1 source release archive](artifacts/Deadwire-1.9.1.zip)
+- [Verification report](VERIFICATION.md)
+- [Benchmark report](BENCHMARKS.md)
+- [Release freeze checklist](FREEZE.md)
 
 ## Status and limitations
 

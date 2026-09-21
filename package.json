@@ -18,7 +18,8 @@
     "test": "npm run build && node --test dist/core.test.js dist/phase2.test.js dist/integrations.test.js dist/provider-verifiers.test.js dist/operations.test.js dist/upstash-native.test.js dist/platform.test.js",
     "dev": "npm run build && node dist/server.js",
     "cli": "npm run build && node dist/cli.js",
-    "demo": "npm run build && node dist/demo.js"
+    "demo": "npm run build && node dist/demo.js",
+    "benchmark": "npm run build && node dist/benchmark.js"
   },
   "engines": {
     "node": ">=20"

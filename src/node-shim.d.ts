@@ -3,5 +3,5 @@ declare module "node:http" { export function createServer(handler: (request: any
 declare module "node:fs" { export function readFileSync(path: string, encoding: string): string; export function writeFileSync(path: string, data: string): void; export function existsSync(path: string): boolean; export function mkdirSync(path: string, options?: { recursive?: boolean }): void; }
 declare module "node:test" { export default function test(name: string, fn: () => void | Promise<void>): void; }
 declare module "node:assert/strict" { const assert: { equal(actual: unknown, expected: unknown): void; deepEqual(actual: unknown, expected: unknown): void; ok(value: unknown): void }; export default assert; }
-declare const process: { argv: string[]; env: Record<string, string | undefined>; exitCode?: number };
+declare const process: { argv: string[]; env: Record<string, string | undefined>; exitCode?: number; version?: string; platform?: string };
 declare const fetch: (input: string, init?: { headers?: Record<string, string> }) => Promise<{ ok: boolean; status: number; text(): Promise<string>; json(): Promise<unknown> }>;
