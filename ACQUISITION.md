@@ -1,33 +1,180 @@
-# Deadwire acquisition and restricted-use notice
+# Acquisition Brief â€” deadwire
 
-**Effective date:** September 21, 2026  
-**Rights holder:** Magnexis
+**Date:** 2026-09-22  
+**Repository:** https://github.com/theworker02/deadwire  
+**Default branch:** `main`  
+**Primary language:** TypeScript  
+**Status:** Diligence briefing only. **No acquisition has occurred** by virtue of this file.  
+**License:** Proprietary â€” sale, written commercial license, or completed asset transfer required (see root `LICENSE`).  
+**Valuation:** Not stated.  
+**Contact:** GitHub [@theworker02](https://github.com/theworker02) Â· [thanks.dev/u/gh/theworker02](https://thanks.dev/u/gh/theworker02)
 
-Deadwire is offered under the proprietary evaluation terms in [LICENSE](LICENSE). This notice explains how those terms apply while any acquisition, investment, partnership, diligence, or other strategic transaction involving Deadwire is being discussed.
+> Cloning or forking this repository does **not** grant production, redistribution, SaaS, OEM, or commercial rights.
 
-## No implied transaction license
+---
 
-Discussing, evaluating, reviewing, cloning, downloading, receiving a demo of, or negotiating for Deadwire does **not** grant a production, commercial, redistribution, modification, sublicensing, or derivative-work license. A prospective acquirer, its affiliates, advisors, contractors, and representatives may use Deadwire only within the narrow private, non-commercial evaluation permission in the license unless Magnexis gives prior written permission.
+## 1. Executive thesis
 
-In particular, a transaction process does not authorize a prospective acquirer to:
+<a href="https://upstash.com" aria-label="Upstash"> <img src="https://upstash.com/favicon.png" width="76" height="76" alt="Upstash official logo"> <p align="center"><strong>Failure intelligence and recovery control for durable workflows.</strong></p>
 
-- deploy Deadwire in production or for internal commercial operations;
-- incorporate Deadwire code, designs, documentation, or recovery logic into another product;
-- train models on, reproduce, distribute, publish, or create derivative works from the materials; or
-- present Deadwire as acquired, licensed, affiliated, endorsed, or approved before a written agreement is fully executed.
+**Why a buyer cares:** deadwire packages transferable product IP â€” source, docs, in-repo brand assets, and a diligence room under `docs/acquisition/` â€” under a clear proprietary posture so diligence can proceed without mistaking the repo for open source.
 
-## Before closing
+---
 
-Until a written agreement signed by Magnexis grants different rights, Magnexis retains all right, title, and interest in Deadwire. Any permitted evaluation remains subject to the repository [LICENSE](LICENSE), applicable law, and any separately signed confidentiality agreement. This notice is not itself an acquisition agreement, license grant, assignment, or waiver of any rights.
+## 2. Product snapshot
 
-## After closing or assignment
+| Item | Detail |
+|------|--------|
+| Product | deadwire |
+| Repo | `theworker02/deadwire` |
+| Language | TypeScript |
+| Open source? | **No** â€” proprietary |
+| Rightsholder | theworker02 |
+| Diligence pack | `docs/acquisition/` |
 
-If Deadwire is acquired or its intellectual-property rights are assigned, the acquiring rights holder may enforce the rights transferred to it under the executed transaction documents and applicable law. Unauthorized use that occurred before, during, or after a transaction process may be addressed by Magnexis and, to the extent rights and claims are transferred, its successor or acquirer. Available remedies depend on the governing agreement, ownership chain, jurisdiction, registration status, and applicable law.
+### Capability highlights (from current materials)
 
-No party should interpret this notice as a guarantee that a particular legal action, remedy, or outcome will be available. For example, in the United States, a copyright owner may generally pursue infringement remedies, but a U.S. work ordinarily must be registered before a federal civil infringement action can be instituted. See the [U.S. Copyright Office's copyright infringement and remedies guidance](https://www.copyright.gov/title17/92chap5.html).
+- [Why Deadwire](#why-deadwire)
+- [Product capabilities](#product-capabilities)
+- [Architecture](#architecture)
+- [Animated product walkthrough](#animated-product-walkthrough)
+- [Quick start](#quick-start)
+- [Upstash integration](#upstash-integration)
+- [Evidence model](#evidence-model)
+- [Incident intelligence](#incident-intelligence)
+- [Recovery protocol](#recovery-protocol)
+- [Simulation and side-effect verification](#simulation-and-side-effect-verification)
+- [Workflow compatibility](#workflow-compatibility)
+- [Agent forensics](#agent-forensics)
 
-## Permission and transaction inquiries
+---
 
-For commercial permission, diligence access, or acquisition discussions, contact Magnexis in writing. Do not use Deadwire beyond private evaluation while waiting for a response or while negotiations are ongoing.
+## 3. Problem / opportunity
 
-> This document is a product notice, not legal advice. Magnexis should have qualified counsel review the license, this notice, and any definitive acquisition documents before relying on them.
+Teams evaluating deadwire typically need either (a) a commercial right to run or embed it, or (b) outright ownership of the Product IP for strategic build-out. Public GitHub visibility without a proprietary license creates false assumptions about free production use. This brief and the linked data room make the commercial path explicit.
+
+---
+
+## 4. What ships today
+
+Honest maturity: treat repository contents, README claims, tests, and release tags as the source of truth. Do not assume production customers, ARR, filed patents, or SLAs unless separately evidenced in diligence.
+
+Typical transferable surfaces:
+
+- Source tree and build/test scripts present in-repo
+- Documentation and design notes
+- Acquisition / diligence markdown under `docs/acquisition/`
+- Branding assets committed to the repository (if any)
+
+---
+
+## 5. Demo / evaluation path (buyer)
+
+Minimal path (no secrets required unless README says otherwise):
+
+```
+```yaml
+incident: DW-193
+affected_executions: 8147
+common_failure_boundary: checkout.finalize â†’ payments-api/v3
+probable_change: payment provider response schema
+recovery:
+  safe_resume: 6921
+  safe_restart: 811
+  manual_review: 304
+  external_side_effect_unknown: 111
+```
+```text
+ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+ â”‚                       Customer application                         â”‚
+ â”‚  Upstash Workflow Â· QStash Â· Workflow Agents Â· external services  â”‚
+ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+               â”‚                                       â”‚
+       Deadwire SDK bridge                      failure callback / DLQ
+               â”‚                                       â”‚
+               â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                               â–¼
+                    HMAC-signed evidence ingestion
+                               â”‚
+                               â–¼
+        evidence graph â†’ incident clustering â†’ deployment / trace correlation
+                               â”‚
+                               â–¼
+            compatibility gate + side-effect verifiers + simulation
+                               â”‚
+                               â–¼
+  receipt â†’ independent approval â†’ 1% canary â†’ observe â†’ ramp â†’ reconcile
+                               â”‚
+                               â–¼
+           QStash resume with required flow-control configuration
+```
+```powershell
+npm install
+npm run typecheck
+npm test
+```
+```
+
+Extended evaluation: `docs/acquisition/BUYER_EVALUATION.md`. Written NDA / evaluation grants may be required for private materials.
+
+---
+
+## 6. What a transaction typically includes
+
+Subject to definitive schedules:
+
+| Included (typical) | Excluded (typical) |
+|--------------------|--------------------|
+| Repo materials + asserted original IP | Seller personal accounts / unrelated repos |
+| Docs + diligence room at closing | Third-party dependency source under separate licenses |
+| In-repo brand marks as assigned | Secrets without rotation plan |
+| Know-how captured in docs | Fabricated revenue, user, or adoption metrics |
+
+---
+
+## 7. Suggested deal structures
+
+| Structure | When it fits |
+|-----------|--------------|
+| Non-exclusive commercial license | Deploy/run under seat or environment terms |
+| Exclusive field-of-use license | Buyer wants exclusivity; seller may retain entity |
+| Asset / IP assignment | Buyer wants ownership of Materials outright |
+| OEM / redistribution | Separate agreement â€” not implied here |
+
+Commercial terms (price, earnouts, escrow) are negotiated under NDA with counsel.
+
+---
+
+## 8. Buyer diligence checklist
+
+- [ ] Confirm Rightsholder identity and authority to sell/license
+- [ ] Inventory Materials (`docs/acquisition/ASSET_INVENTORY.md`)
+- [ ] Review IP posture (`IP_PROVENANCE.md`) and dependencies (`DEPENDENCY_INVENTORY.md`)
+- [ ] Run evaluation script (`BUYER_EVALUATION.md`)
+- [ ] Review risks (`RISK_REGISTER.md`)
+- [ ] Agree transfer scope (`TRANSFER_MANIFEST.md`) and handoff (`HANDOFF_CHECKLIST.md`)
+- [ ] Supersede root `LICENSE` at closing via definitive agreement
+
+---
+
+## 9. Related documents
+
+| Document | Purpose |
+|----------|---------|
+| `LICENSE` | Proprietary â€” no default grant |
+| `docs/acquisition/README.md` | Data-room index |
+| `docs/acquisition/EXECUTIVE_SUMMARY.md` | One-page thesis |
+| `README.md` | Product overview |
+| `SECURITY.md` | Vulnerability reporting |
+| `COMMERCIAL.md` | Licensing contact path |
+| `.github/FUNDING.yml` | Sponsors / thanks.dev |
+
+---
+
+## 10. Disclaimer
+
+This package is informational and **does not** create a binding offer, grant of rights, or investment advice. Engage counsel for any transaction.
+
+---
+
+*Document version: 2.0.0 / 2026-09-22 Â· Classification: acquisition briefing*
