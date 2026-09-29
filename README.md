@@ -1,4 +1,24 @@
 <p align="center">
+  <img src="docs/logo.svg" alt="deadwire official logo" width="128" height="128">
+</p>
+
+<p align="center">
+  <a href="https://theworker02.github.io/deadwire/"><img src="https://img.shields.io/badge/docs-live-0B1F33?style=for-the-badge&labelColor=C9A227" alt="Docs"></a>
+  <a href="https://github.com/theworker02/deadwire/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/release-v1.0.0-success?style=for-the-badge" alt="Release"></a>
+  <a href="https://github.com/theworker02/deadwire/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-see%20LICENSE-blue?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/theworker02/deadwire"><img src="https://img.shields.io/badge/status-maintained-informational?style=for-the-badge" alt="Status"></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-0B1F33.svg" alt="version">
+  <img src="https://img.shields.io/badge/category-product-C9A227.svg" alt="category">
+  <img src="https://img.shields.io/badge/pages-enabled-222.svg" alt="pages">
+  <img src="https://img.shields.io/badge/docs-thickened-brightgreen.svg" alt="docs">
+  <img src="https://img.shields.io/badge/notes-detailed-lightgrey.svg" alt="notes">
+</p>
+
+
+<p align="center">
   <a href="https://upstash.com" aria-label="Upstash">
     <img src="https://upstash.com/favicon.png" width="76" height="76" alt="Upstash official logo">
   </a>
@@ -558,3 +578,16 @@ Deadwire `1.9.1` is a comprehensive, tested product and integration foundation. 
 To use it with a real customer workload, an operator must configure production identity, Postgres, HMAC secrets, QStash credentials, deployment/trace connectors, and verifier adapters. No recovery action occurs automatically, and no external Upstash resume was triggered while preparing this repository.
 
 This conservative posture is deliberate: a recovery-control product only earns trust when it is precise about both its evidence and its limits.
+
+## Badges & release notes
+
+| Badge | Meaning |
+| --- | --- |
+| docs live | Public documentation / Pages surface for `deadwire` |
+| release v1.0.0 | Stable tagged release with narrative notes |
+| license | See repository `LICENSE` for terms |
+| status maintained | Actively kept in the @theworker02 portfolio |
+| version 1.0.0 | Documentation and brand completeness milestone |
+| pages enabled | Site intended at `https://theworker02.github.io/deadwire/` |
+
+Detailed narrative for the stable line lives in [CHANGELOG.md](./CHANGELOG.md) and the [v1.0.0 GitHub Release](https://github.com/theworker02/deadwire/releases/tag/v1.0.0).
